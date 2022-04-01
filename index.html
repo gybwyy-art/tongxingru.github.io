@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>请假外出、返校权限查询</title>
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin:0;
+        }
+
+        #demoDiv {
+            width: 100%;
+            background: rgb(242, 242, 242);
+            padding: 10px 0;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .top1 {
+            width: 100%;
+            height: 40px;
+            box-sizing: border-box;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+            font-weight: bolder;
+            font-family: "PingFang SC";
+            color: rgb(51, 51, 51);
+            font-size: 12px;
+            padding: 0 10px;
+        }
+
+        .top1-img {
+            display: flex;
+            align-items: center;
+        }
+
+        .topImg {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        .top1-div {
+            width: 12px;
+            height: 12px;
+            box-sizing: border-box;
+            border: 6px solid rgba(0, 0, 0, 0);
+            border-top-color: rgb(209, 209, 209);
+        }
+
+        .top2 {
+            width: 100%;
+            height: 40px;
+            background: #fff;
+            font-size: 12px;
+            font-weight: bold;
+            font-family: "PingFang SC";
+            color: rgb(51, 51, 51);
+            box-sizing: border-box;
+            padding: 0 10px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .topName {
+            width: 100%;
+            height: 44px;
+            background: rgba(47, 99, 164, 0.05);
+            font-size: 14px;
+            box-sizing: border-box;
+            padding: 0 10px;
+            color: rgb(135, 135, 135);
+            font-family: '微软雅黑';
+            margin-top: 10px;
+            line-height: 44px;
+        }
+
+        .gybName {
+            width: 100%;
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            color: rgb(135, 135, 135);
+            font-size: 14px;
+            background: #fff;
+        }
+
+        .topPic {
+            width: 100%;
+            height: 44px;
+            background: rgba(47, 99, 164, 0.05);
+            font-size: 14px;
+            box-sizing: border-box;
+            padding: 0 10px;
+            color: rgb(135, 135, 135);
+            font-family: '微软雅黑';
+            margin-top: 0px;
+            line-height: 44px;
+        }
+
+        .gybPic {
+            width: 100%;
+            height: 140px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .picImg {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+        }
+
+        .jsColor {
+            width: 100%;
+            height: 60px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .colorsDiv {
+            width: 95%;
+            height: 34px;
+        }
+
+        .erweima {
+            width: 100%;
+            height: 200px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .erweimaPic {
+            width: 140px;
+            height: 140px;
+        }
+
+        .yes {
+            width: 100%;
+            height: 50px;
+            background: #fff;
+            color: green;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 50px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .bottomDiv {
+            width: 100%;
+            height: 50px;
+            color: rgb(96, 98, 102);
+            font-size: 14px;
+            text-align: center;
+            line-height: 50px;
+            background: #fff;
+        }
+
+        .lastDiv {
+            width: 100%;
+            height: 60px;
+            background: #fff;
+            box-sizing: border-box;
+            padding: 0 10px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            position: sticky;
+            bottom: 0;
+        }
+
+        .more {
+            width: 80px;
+            height: 40px;
+            border: 1px solid rgb(66, 133, 244);
+            border-radius: 30px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 16px;
+            color: rgb(66, 133, 244);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demoDiv">
+        <div class="top1">
+            <div class="top1-img">
+                <div class="topImg">
+                    <img src="https://raw.githubusercontent.com/ggguoyb/jinnian.github.io/11919af8dff908e38244bb067be2fa4d10428549/top.png"
+                        alt="">
+                </div>
+                <p>当前部门：计算机学院（国家示范性软件学院）</p>
+            </div>
+            <div class="top1-div">
+            </div>
+        </div>
+        <div class="top2">
+            <div class="topImg">
+                <img src="https://raw.githubusercontent.com/ggguoyb/jinnian.github.io/61df7cf81cf73eb41e65d7696216f37452580094/bottom.png"
+                    alt="">
+            </div>
+            <p>请假外出、返校权限查看</p>
+        </div>
+        <div class="topName">姓名</div>
+        <div class="gybName">郭义搏</div>
+        <div class="topPic">照片</div>
+        <div class="gybPic">
+            <div class="picImg">
+                <img src="https://raw.githubusercontent.com/ggguoyb/jinnian.github.io/11919af8dff908e38244bb067be2fa4d10428549/touxiang.png"
+                    alt="">
+            </div>
+        </div>
+        <div class="jsColor">
+            <div class="colorsDiv">
+                <img src="https://raw.githubusercontent.com/ggguoyb/jinnian.github.io/11919af8dff908e38244bb067be2fa4d10428549/colorsGif.gif" alt="">
+            </div>
+        </div>
+        <div class="topPic">状态码</div>
+        <div class="erweima">
+            <div class="erweimaPic">
+                <img src="https://raw.githubusercontent.com/ggguoyb/jinnian.github.io/11919af8dff908e38244bb067be2fa4d10428549/erweima.jpg"
+                    alt="">
+            </div>
+        </div>
+        <div class="yes">允许出校</div>
+        <div class="topPic">学工号</div>
+        <div class="bottomDiv">2021140761</div>
+        <div class="topPic">出入校时间</div>
+        <div class="bottomDiv nowTimer">2021-10-30 10:35:55</div>
+        <div class="topPic">学院</div>
+        <div class="bottomDiv">计算机学院（国家示范性软件学院）</div>
+        <div class="lastDiv">
+            <div class="more">更多</div>
+        </div>
+    </div>
+    <script>
+        var date = new Date();
+        var nowTimer = date.getFullYear().toString() + '-' + (date.getMonth()+1).toString() + '-' + date.getDate() + ' ' + date.toLocaleTimeString('chinese',{hour12: false});
+        var timeDic = document.getElementsByClassName('nowTimer');
+        timeDic[0].innerText = nowTimer;
+    </script>
+    <!-- <script>
+        // var _colorDiv = document.getElementsByClassName('colorsDiv');
+        function randomNum(firstNum, lastNum) {
+            var choices = lastNum - firstNum;
+            return Math.floor(Math.random() * choices + firstNum);
+        }
+        function changeColor() {
+            var colors = ['blue', 'red', 'yellow', 'purple'];
+            return colors[randomNum(0, colors.length -1)];
+        }
+        function divBackColor() {
+            var box = document.getElementsByClassName('colorsDiv');
+            box[0].style.background = changeColor();
+        }
+        function timeColor() {
+            divBackColor();
+            setTimeout(timeColor, 600);
+        }
+        window.onload = timeColor;
+    </script> -->
+</body>
+
+</html>
